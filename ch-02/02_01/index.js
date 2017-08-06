@@ -1,8 +1,10 @@
+const { createElement } = React
+const { render } = ReactDOM
 
-const title = React.createElement(
+const title = createElement(
   'h1',
   {id: 'title', className: 'header'},
   'hello world'
 );
 
-ReactDOM.render(title, document.getElementById('react-container'));
+render(title, document.getElementById('react-container'));
